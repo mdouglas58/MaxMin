@@ -1,8 +1,8 @@
 {
-  "name": "front-end-starter",
+  "name": "random-number-picker",
   "version": "1.1.0",
   "private": true,
-  "description": "A starter template repo for 'front-end' students",
+  "description": "This repo is going to do random numbers by using the 'min' and 'max' numbers",
   "main": "index.js",
   "scripts": {
     "start": "browser-sync start --server --files '**/*.html, **/*.css, **/**.js'",
@@ -12,7 +12,7 @@
     "html-css-js",
     "student"
   ],
-  "author": "Manav Misra",
+  "author": "Major Douglas III",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.26.14",
