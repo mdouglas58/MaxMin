@@ -11,10 +11,32 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>Frontend Starter</title>
+    <title>Random Number Picker</title>
   </head>
   <body>
-    <h1>Frontend Starter</h1>
+    <h1 class="text-center">Random Number Picker</h1>
+    <div class="flex">
+      <form class="flex flex--column">
+        <div class="flex space-around">
+          <div>
+            <label for="min" class="screen-reader-text">Minimum Number</label>
+            <input placeholder="Minimum Number" type="text" id="min" name="min" />
+          </div>
+
+          <div>
+            <label for="max" class="screen-reader-text">Maximum Number</label>
+            <input placeholder="Maximum Number" type="text" id="max" name="max" />
+          </div>
+        </div>
+        <div class="text-color">
+          <label for="color">Pick a Color</label>
+          <input type="color" id="color" />
+        </div>
+        <buttom type="submit" class="button">Submit</buttom>
+      </form>
+    </div>
+    <p class="text-center"></p>
+
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
