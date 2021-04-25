@@ -14,28 +14,37 @@
     <title>Random Number Picker</title>
   </head>
   <body>
-    <h1 class="text-center">Random Number Picker</h1>
-    <div class="flex">
-      <form class="flex flex--column">
-        <div class="flex space-around">
-          <div>
-            <label for="min" class="screen-reader-text">Minimum Number</label>
-            <input placeholder="Minimum Number" type="text" id="min" name="min" />
-          </div>
+    <div class="wrapper flex flex--column">
+      <h1>Random Number Picker</h1>
 
-          <div>
-            <label for="max" class="screen-reader-text">Maximum Number</label>
-            <input placeholder="Maximum Number" type="text" id="max" name="max" />
-          </div>
-        </div>
-        <div class="text-color">
-          <label for="color">Pick a Color</label>
-          <input type="color" id="color" />
-        </div>
-        <buttom type="submit" class="button">Submit</buttom>
+      <form id="min-num">
+        <input
+          placeholder="Minimum Number"
+          type="number"
+          id="min-val"
+          min="1"
+        /><label for="min-val" class="screen-reader-text">Min Value</label>
+        <button class="button button-jumbo" type="submit">Set Min Value</button>
       </form>
+      <form id="max-num">
+        <input
+          placeholder="Maximum Number"
+          type="number"
+          id="max-val"
+          min="1"
+        /><label for="max-val" class="screen-reader-text">Max Value</label>
+        <button class="button button-jumbo" type="submit">Set Max Value</button>
+      </form>
+
+      <div>
+        <input type="color" id="color" />
+        <label for="color">Font Color</label>
+      </div>
+
+      <button class="button button--random button-jumbo" type="submit">
+        Pick a Number!
+      </button>
     </div>
-    <p class="text-center"></p>
 
     <script src="./scripts.js" type="module"></script>
   </body>
